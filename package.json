@@ -1,0 +1,35 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "Robust automation framework with Playwright and TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium",
+    "test:api": "playwright test tests/api/",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "mysql2": "^3.6.0",
+    "pg": "^8.11.0",
+    "playwright": "^1.40.0",
+    "reflect-metadata": "^0.2.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "allure-playwright": "^2.0.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  }
+}
